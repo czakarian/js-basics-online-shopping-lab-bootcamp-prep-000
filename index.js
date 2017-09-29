@@ -18,7 +18,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if(cart.length() === 0) {
+  if(cart.length === 0) {
     console.log("Your shopping cart is empty.")
   }
   else if(cart.length === 1) {
@@ -29,13 +29,15 @@ function viewCart() {
   else if(cart.length === 2) {
     console.log(`In your cart, you have ${cart[0]} at $${cart[0]}`)
   }
-  else {
-    consolelog
-  }
+  
 }
 
 function total() {
-  for(var i = 0; i < cart.length())
+  var total = 0
+  for(var i = 0; i < cart.length; i++) {
+    total = total + parseInt(cart[i])
+  }
+  return total
 }
 
 function removeFromCart(item) {
