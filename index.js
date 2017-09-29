@@ -38,12 +38,11 @@ function viewCart() {
     for(var i = 0; i < cart.length; i++) {
       var cartitem = Object.keys(cart[i]) [0]
       var price = cart[i][cartitem]
-      output = output + `${cartitem} at $${price}`
       if(i === cart.length-1){
-        output = output + '.'
+        output = output + `and ${cartitem} at $${price}.`
       }
       else {
-        output = output + ', '
+        output = output + `${cartitem} at $${price}, `
       }
     }
     console.log(output)
