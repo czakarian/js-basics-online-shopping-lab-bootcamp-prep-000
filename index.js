@@ -29,7 +29,7 @@ function viewCart() {
   else if(cart.length === 2) {
     console.log(`In your cart, you have ${cart[0]} at $${cart[0]}`)
   }
-  
+
 }
 
 function total() {
