@@ -18,19 +18,24 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if(cart.length === 0) {
+  if(cart.length() === 0) {
     console.log("Your shopping cart is empty.")
   }
   else if(cart.length === 1) {
+    var cartitem = cart[0]
+    var price = cart[0]
     console.log(`In your cart, you have ${cart[0]} at $${cart[0].item}.`)
   }
   else if(cart.length === 2) {
     console.log(`In your cart, you have ${cart[0]} at $${cart[0]}`)
   }
+  else {
+    consolelog
+  }
 }
 
 function total() {
-  // write your code here
+  for(var i = 0; i < cart.length())
 }
 
 function removeFromCart(item) {
