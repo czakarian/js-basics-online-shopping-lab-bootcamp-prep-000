@@ -43,7 +43,7 @@ function viewCart() {
         output = output + '.'
       }
       else {
-        output = output + ','
+        output = output + ', '
       }
     }
     console.log(output)
