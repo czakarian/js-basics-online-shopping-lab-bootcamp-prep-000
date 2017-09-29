@@ -27,7 +27,11 @@ function viewCart() {
     console.log(`In your cart, you have ${cartitem} at $${price}.`)
   }
   else if(cart.length === 2) {
-    console.log(`In your cart, you have ${cart[0]} at $${cart[0]}`)
+    var cartitem1 = Object.keys(cart[0])[0]
+    var cartitem2 = Object.keys(cart[1])[0]
+    var price1 = cart[0][cartitem1]
+    var price2 = cart[1][cartitem2]
+    console.log(`In your cart, you have ${cartitem1} at $${price1} and ${cartitem2} at $${price2}`)
   }
 
 }
