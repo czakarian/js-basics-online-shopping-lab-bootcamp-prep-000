@@ -53,7 +53,8 @@ function viewCart() {
 function total() {
   var total = 0
   for(var i = 0; i < cart.length; i++) {
-    total = total + parseInt(cart[i][item])
+    var cartitem = Object.keys(cart[i])[0]
+    total = total + parseInt(cart[i][cartitem])
   }
   return total
 }
